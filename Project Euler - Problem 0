@@ -1,0 +1,16 @@
+# Project Euler -- Problem 0
+@sum = 0 
+# the sum of all the odd squares
+limit = 749000
+# amount of squares you want the program to look through
+
+(1..limit).each do |i|
+  if i.odd?
+    # check if its odd  
+    @sum += (i*i)
+    # calculate the perfect square by multiplying the odd numbers    
+  end
+end
+
+puts @sum
+# our output
